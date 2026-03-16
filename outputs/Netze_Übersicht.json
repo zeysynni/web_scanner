@@ -1,0 +1,58 @@
+{
+  "base_url": "https://www.stadtwerke-waiblingen.de/Netze/Stromnetz",
+  "pages": [
+    {
+      "url": "https://www.stadtwerke-waiblingen.de/Netze/Stromnetz",
+      "title": "Stromnetz | Stadtwerke Waiblingen",
+      "instruction": null,
+      "sections": [
+        {
+          "heading": "Stromnetz",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "title": null,
+              "content": "Wir sind für Sie da - und das Rund um die Uhr. Die Vernetzung rund um Waiblingen ist unser Aufgabengebiet. Dabei sorgen wir dafür, dass die Leitungen für Strom, Gas, Wasser und Glasfaser in einem guten Zustand sind. Hier finden Sie alle Informationen rund um unser Netzbereich."
+            }
+          ]
+        },
+        {
+          "heading": "Anmeldung E-Ladestation",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "title": null,
+              "content": "Die Nutzung von Ladeinfrastruktur für Elektromobilität muss beim jeweiligen Netzbetreiber gemeldet werden. Um langfristig eine reibungslose Versorgungssicherheit zu gewährleisten, melden Sie bitte Ihre Wallbox mit untenstehendem Anmeldeformular bei Ihrem Netzbetreiber, den Stadtwerken Waiblingen, an.\n\nFalls Ihre Ladestation eine Leistung größer als 4,2 kW hat, muss diese laut §14a EnWG zwingend steuerbar sein."
+            },
+            {
+              "type": "list",
+              "title": null,
+              "content": "- Anmeldeformular Ladeeinrichtungen zur Ergaenzung TAB 2007 Stand Oktober 2022 (PDF)\n- Antrag Anmeldung steuVE nach §14a EnWG (PDF)"
+            },
+            {
+              "type": "text",
+              "title": "Info",
+              "content": "📋 Webformular: Anfrage Netzanschlussprüfung – Zu finden unter: Anmeldung E-Ladestation"
+            }
+          ]
+        },
+        {
+          "heading": "Netzanschluss",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "title": null,
+              "content": "Sehr geehrte Kundin, sehr geehrter Kunde,\ngerne führen wir bei Ihnen eine Netzanschlussprüfung durch, um Ihre Individuallösung einer Ladeinfrastruktur zu ermöglichen. Bitte füllen Sie hierzu das untenstehende Formular aus. Sobald wir Ihre Anfrage geprüft haben, melden wir uns bei Ihnen. Bitte je Hausanschluss eine Anfrage stellen."
+            },
+            {
+              "type": "text",
+              "title": "Info",
+              "content": "📋 Webformular: Anfrage Netzanschlussprüfung – Zu finden unter: Anmeldung E-Ladestation"
+            }
+          ]
+        }
+      ],
+      "contact": null
+    }
+  ]
+}
