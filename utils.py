@@ -52,32 +52,41 @@ def print_markdown(result):
 
 def json_to_markdown(data: dict) -> str:
     lines = []
+
     for page in data["pages"]:
         # Page header
-        lines.append(f"# {page['title']}")
         lines.append(f"*URL: {page['url']}*")
         lines.append("")
-        # Intro instruction
-        if page.get("instruction"):
-            lines.append(page["instruction"])
+
+        for block in page.get("block", []):
+            lines.append(f"## {block['heading']}")
             lines.append("")
-        # Sections
-        for section in page.get("sections", []):
-            lines.append(f"## {section['heading']}")
-            lines.append("")
-            for block in section.get("blocks", []):
-                if block.get("title"):
-                    lines.append(f"### {block['title']}")
-                    lines.append("")
-                for segment in block.get("segments", []):
+
+            for segment in block.get("segments", []):
+                if segment.get("text"):
                     lines.append(segment["text"])
                     lines.append("")
-        # Contact
-        if page.get("contact"):
-            lines.append("## Kontakt")
-            lines.append("")
-            lines.append(page["contact"])
-            lines.append("")
+
+                if segment.get("table"):
+                    lines.append(segment["table"])
+                    lines.append("")
+
+                if segment.get("files"):
+                    lines.append("**Dateien:**")
+                    lines.append(segment["files"])
+                    lines.append("")
+
+                if segment.get("contacts"):
+                    lines.append("**Kontakt:**")
+                    lines.append(segment["contacts"])
+                    lines.append("")
+
+                if segment.get("FAQs"):
+                    for qa in segment["FAQs"].get("QAs", []):
+                        lines.append(f"**{qa['question']}**")
+                        lines.append(qa["answer"])
+                        lines.append("")
+
         # Page separator
         lines.append("---")
         lines.append("")
@@ -94,7 +103,16 @@ def save_markdown_from_json(json_path: str, md_path: str) -> None:
         f.write(markdown)
 
 if __name__ == "__main__":
-    save_markdown_from_json(
-        json_path="outputs/Netze-Strom.json",
-        md_path="outputs/Netze-Strom.md"
-    )
+    # save json to md
+    input_path = Path("outputs/Unternehmen.json")
+    output_path = input_path.with_suffix(".md")
+
+    with open(input_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    markdown = json_to_markdown(data)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(markdown)
+
+    print(f"Saved to {output_path}")

@@ -7,7 +7,8 @@ from agents.models.openai_provider import OpenAIProvider
 
 from mcp_params import web_crawling_mcp_params
 from prompts import scanner_instruction
-from webpage_structure import Webpages
+#from webpage_structure import Webpages
+from webpage_structure_netze import Webpages
 from utils import *
 
 # defines the mcp_server and agent for web crawling

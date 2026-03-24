@@ -44,17 +44,15 @@ def get_user_prompt_structured_output(url, structure):
     URL:
     {url}
 
-    Extract the content according to the following structure.
+    Extract the content of topics according to the following structure.
 
     Structure:
     {structure}
 
     Rules:
     - The URL is the base page (Ebene 1).
-    - Do not navigate to other webpages.
-    - Click all expandable elements to reveal hidden content.
-    - Extract text exactly as shown on the webpage.
-    - Do not click in any PDFs for ddownloading.
-    - Give hints of the existence of files for downloading by mentioning what it is roughly about.
+    - Do not navigate to other webpages or open any files.
+    - Click all expandable elements one after another to reveal hidden content.
+    - You must extract text exactly as shown on the webpage.
     """
 

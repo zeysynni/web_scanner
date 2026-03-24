@@ -7,6 +7,9 @@ from crawl_agent import create_craw_agent, launch_crawler
 from config import *
 from utils import *
 
+# readme
+# check webpage structure first, if you want to change structure, dont forget to change the func json->md in utils.py
+# define config
 load_dotenv(override=True)
 # note separate strucutre more, also items to crawl. uplodad to github
 

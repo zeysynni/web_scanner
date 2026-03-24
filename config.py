@@ -21,31 +21,56 @@ structure_netze_erdgas_1 = """
   - Netznutzungsentgelte
 """
 structure_netze_erdgas_2 ="""
-- Erdgas
-  - Netzstrukturdaten
-  - Grund- & Ersatzversorgung
+- Erdgas (main page)
+  - Netznutzungsentgelte (sub page, make sure click to enter this sub page)
+  - Netzstrukturdaten (sub page, make sure click to enter this sub page)
 """
-structure_netze_was_glas = """
-- Wasser
+structure_netze_erdgas_3 ="""
+- Erdgas (main page)
+  - Grund- & Ersatzversorgung (sub page, make sure click to enter this sub page)
+"""
+structure_netze_wasser = """
+- Wasser (everything on this webpage)
+"""
+structure_netze_glasfaser = """
 - Glasfaser
 """
-strucutre_netze_mess_plan ="""
+strucutre_netze_messstellenbetrieb ="""
 - Messstellenbetrieb
-- Planauskunft
-  - Zur Planauskunft
+"""
+strucutre_netze_planauskunft = """
+- Planauskunft (zum Button 'Zur Planauskunft' musst du Info geben, dass es ein Formular gibt)
 """
 
 structure_unternehmen ="""
 - Unternehmen
 """
-structure = {
+structure_karriere ="""
+- Karriere
+"""
+structure_aktuelles ="""
+- Aktuelles
+"""
+structure_kontakt ="""
+- Kontakt
+"""
+structure_Kundenportal ="""
+- Kundenportal (Hier musst du info geben, was das Kundenportal anbietet)
+"""
+
+#[structure_netze_strom_1, structure_netze_strom_2, structure_netze_strom_3, structure_netze_erdgas_1, structure_netze_erdgas_2, structure_netze_was_glas, strucutre_netze_mess_plan]
+
+structure_ = {
     "Netze-Strom": {
-        "url": "https://www.stadtwerke-waiblingen.de/Netze/Uebersicht-Netze",
-        "subpart": [structure_netze_strom_1, structure_netze_strom_2, structure_netze_strom_3, structure_netze_erdgas_1, structure_netze_erdgas_2, structure_netze_was_glas, strucutre_netze_mess_plan],
+        "url": "https://www.stadtwerke-waiblingen.de/Netze/Stromnetz",
+        "subpart": [structure_netze_strom_3],
 
     },
-    "Unternehmen": {
-        "url": "https://www.stadtwerke-waiblingen.de/unternehmen",
-        "subpart": [structure_unternehmen]
-    }
+}
+structure = {
+    "Kundenportal": {
+        "url": "https://privatkundenportal.net/waiblingen/",
+        "subpart": [structure_Kundenportal],
+
+    },
 }

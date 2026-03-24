@@ -22,7 +22,7 @@ class Block(BaseModel):
     segments: List[ContentSegment] = Field(
         description=(
             "Each segment should represent a logical subpart such as "
-            "a paragraph, list item, or subsection."
+            "a paragraph, list item, name of a file for downloading, or subsection."
         )
     )
 
@@ -32,6 +32,14 @@ class Section(BaseModel):
         "Visible heading exactly as shown on the webpage. "
         "Do not invent headings. If no heading exists, use the nearest visible title."
     )
+    )
+    subheading: Optional[str] = Field(
+        description=(
+        "Subheading directly after heading"
+        "Visible subheading exactly as shown on the webpage. "
+        "Do not invent subheadings. If no subheading exists, leave this empty."
+        ),
+        example = "Allgemeinte Informationen"
     )
     blocks: List[Block] = Field(
         description=(
@@ -55,11 +63,12 @@ class Page(BaseModel):
     sections: List[Section] = Field(
         description="All sections appearing on the webpage."
     )
-    contact: Optional[str] = Field(
+    contact: str = Field(
         description=(
-            "Contact information if present on the page. "
+            "Contact information like telephone number. "
             "Copy exactly from the webpage."
-        )
+        ),
+        example="Telefonnummer starts with +49"
     )
 
 class Webpages(BaseModel):
