@@ -2,56 +2,104 @@
   "base_url": "https://www.stadtwerke-waiblingen.de/Netze/Uebersicht-Netze",
   "pages": [
     {
-      "url": "https://www.stadtwerke-waiblingen.de/Netze/Stromnetz/Netznutzungsentgelte",
-      "title": "Netznutzungsentgelte | Stadtwerke Waiblingen",
+      "url": "https://www.stadtwerke-waiblingen.de/Netze/Stromnetz",
+      "title": "Stromnetz | Stadtwerke Waiblingen",
       "instruction": null,
       "sections": [
         {
-          "heading": "Netznutzungsentgelte Strom",
+          "heading": "Stromnetz",
           "blocks": [
             {
               "title": null,
               "segments": [
                 {
-                  "text": "Berechnung ÜNB-Zuschuss 2026 (PDF | 81 KB) - Hinweis auf eine Datei zum Herunterladen"
-                },
-                {
-                  "text": "Netzentgelte Strom ab 01.01.2023 (PDF | 243 KB) - Hinweis auf eine Datei zum Herunterladen"
-                },
-                {
-                  "text": "Netzentgelte Strom ab 01.01.2024 (PDF | 311 KB) - Hinweis auf eine Datei zum Herunterladen"
-                },
-                {
-                  "text": "Netzentgelte Strom ab 01.01.2025 (PDF | 311 KB) - Hinweis auf eine Datei zum Herunterladen"
-                },
-                {
-                  "text": "Netzentgelte Strom ab 01.01.2026 (PDF | 298 KB) - Hinweis auf eine Datei zum Herunterladen"
+                  "text": "Wir sind für Sie da - und das Rund um die Uhr. Die Vernetzung rund um Waiblingen ist unser Aufgabengebiet. Dabei sorgen wir dafür, dass die Leitungen für Strom, Gas, Wasser und Glasfaser in einem guten Zustand sind. Hier finden Sie alle Informationen rund um unser Netzbereich."
                 }
               ]
             }
           ]
         },
         {
-          "heading": "Hochlastzeitfenster",
+          "heading": "Grund- & Ersatzversorgung",
           "blocks": [
             {
               "title": null,
               "segments": [
                 {
-                  "text": "Hinweis zu § 19 Abs. 2 StromNEV: Nach § 19 Abs. 2 Satz 1 StromNEV besteht die Möglichkeit zur Vereinbarung eines individuellen Netzentgeltes sowie nach § 19 Abs. 2 Satz 2 StromNEV die Möglichkeit zur Befreiung von Netzentgelten. Die Vereinbarung eines individuellen Netzentgeltes nach Satz 1 sowie die Befreiung nach Satz 2 bedürfen der Genehmigung der Regulierungsbehörde Baden-Württemberg. Der Antrag kann auch durch den Letztverbraucher gestellt werden. Bei Fragen steht Ihnen die Stadtwerke Waiblingen GmbH gerne zur Verfügung."
+                  "text": "Die Stadtwerke Waiblingen GmbH hat gemäß § 36 Abs. 2 EnWG als Betreiber von Energieversorgungsnetzen der allgemeinen Versorgung nach § 18 Abs. 1 EnWG erstmals zum 01.07.2006 den Grundversorger für die nächsten drei Kalenderjahre festgestellt."
                 }
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Kontakt",
-          "blocks": [
+            },
             {
-              "title": "Netznutzung",
+              "title": "Grundversorgung bis 31.12.2027 (aktuelle Feststellung)",
               "segments": [
                 {
-                  "text": "+49 7151 131-322"
+                  "text": "Grundversorger bis 31.12.2027 (aktuelle Feststellung)"
+                }
+              ]
+            },
+            {
+              "title": "Grundversorger bis 31.12.2024",
+              "segments": [
+                {
+                  "text": "Grundversorger bis 31.12.2024"
+                }
+              ]
+            },
+            {
+              "title": "Grundversorger bis 31.12.2021",
+              "segments": [
+                {
+                  "text": "Grundversorger bis 31.12.2021"
+                }
+              ]
+            },
+            {
+              "title": "Grundversorger bis 31.12.2018",
+              "segments": [
+                {
+                  "text": "Grundversorger bis 31.12.2018"
+                }
+              ]
+            },
+            {
+              "title": "Grundversorger bis 31.12.2015",
+              "segments": [
+                {
+                  "text": "Grundversorger bis 31.12.2015"
+                }
+              ]
+            },
+            {
+              "title": "Grundversorger bis 31.12.2009",
+              "segments": [
+                {
+                  "text": "Grundversorger bis 31.12.2009"
+                }
+              ]
+            },
+            {
+              "title": "Ersatzversorgung",
+              "segments": [
+                {
+                  "text": "Das EnWG regelt auch die \"Ersatzversorgung mit Energie\" für die Haushalts-, Gewerbe und Landwirtschaftskunden. Von Ersatzversorgung wird gesprochen, wenn ein Kunde aus dem Stromnetz Energie bezieht, ohne dass dieser Bezug einer Lieferung oder einem bestimmten Liefervertrag zugeordnet werden kann, d. h. Strombezug ohne Liefervertrag."
+                },
+                {
+                  "text": "Solange Sie keinen Stromlieferungsvertrag abgeschlossen haben, werden Sie für maximal drei Monate zu den Konditionen der Ersatzversorgung beliefert."
+                },
+                {
+                  "text": "Die Ersatzversorgung wird im Netzgebiet Waiblingen von den Stadtwerken Waiblingen GmbH, Ihrem Grundversorger, durchgeführt."
+                }
+              ]
+            },
+            {
+              "title": "Kontakt",
+              "segments": [
+                {
+                  "text": "Kontakt allgemein"
+                },
+                {
+                  "text": "+49 7151 131-0"
                 },
                 {
                   "text": "E-Mail senden"
@@ -59,23 +107,97 @@
               ]
             }
           ]
-        }
-      ],
-      "contact": null
-    },
-    {
-      "url": "https://www.stadtwerke-waiblingen.de/Netze/Stromnetz/Netzstrukturdaten",
-      "title": "Netzstrukturdaten | Stadtwerke Waiblingen",
-      "instruction": null,
-      "sections": [
+        },
         {
-          "heading": "Netzstrukturdaten",
+          "heading": "EEG & Einspeiser",
           "blocks": [
             {
               "title": null,
               "segments": [
                 {
-                  "text": "Keine weiteren sichtbaren Textinhalte auf der Seite."
+                  "text": "Für neu zu errichtende EEG-/KWK-Anlagen müssen Anlagenbetreiber und Anlageninstallateure einige Vorgaben beachten. Die Erfüllung der Anforderungen des jeweiligen Netzbetreibers ist Grundvoraussetzung für die Energieeinspeisung."
+                },
+                {
+                  "text": "Die notwendige Registrierung im Marktstammdatenregister können Sie hier vornehmen:"
+                },
+                {
+                  "text": "Registrierung im Marktstammdatenregister"
+                },
+                {
+                  "text": "Erforderliche Nachweise und Formulare"
+                },
+                {
+                  "text": "Anforderungen an neue Photovoltaik-Anlagen"
+                },
+                {
+                  "text": "Anforderungen an neue KWK-Anlagen"
+                },
+                {
+                  "text": "Balkon-PV-Anlagen"
+                },
+                {
+                  "text": "Hinweis für Einspeisemanagement nach § 6 EEG"
+                },
+                {
+                  "text": "Registrierungspflicht für Stromerzeugungsanlagen"
+                },
+                {
+                  "text": "Information zum Steuerbarkeitscheck gemäß § 12 Abs. 2a-h EnWG"
+                },
+                {
+                  "text": "Im Zuge der Umsetzung des § 12 Abs. 2a-h des Energiewirtschaftsgesetzes (EnWG) informieren wir Sie über den anstehenden Steuerbarkeitscheck Ihrer Erzeugungsanlage(n), die an unser Verteilnetz angeschlossen sind:"
+                },
+                {
+                  "text": "Informationen zum Steuerbarkeitscheck - Stadtwerke Waiblingen (Es gibt ein Dokument über Informationen zum Steuerbarkeitscheck zum Herunterladen)."
+                }
+              ]
+            },
+            {
+              "title": "Informationen für Anlagenbetreiber gemäß EEG 2021",
+              "segments": [
+                {
+                  "text": "Wann endet der Anspruch auf die EEG-Förderung?"
+                },
+                {
+                  "text": "Was geschieht nach dem Ende der EEG-Förderung?"
+                },
+                {
+                  "text": "Kann ich meine Anlage nach dem Förderende überhaupt weiterbetreiben?"
+                },
+                {
+                  "text": "Wie kann ich meine Anlage nach dem Förderende weiterbetreiben?"
+                },
+                {
+                  "text": "Sollte ich einen Heimspeicher installieren?"
+                },
+                {
+                  "text": "Muss ich bei Eigenverbrauch des erzeugten Stroms Steuer, Abgaben oder Umlagen zahlen?"
+                },
+                {
+                  "text": "Was ist die wirtschaftlichste Option für meine Anlage?"
+                },
+                {
+                  "text": "Benötige ich ein intelligentes Messsystem?"
+                },
+                {
+                  "text": "Macht es Sinn, die Bestands- gegen eine Neuanlage auszutauschen?"
+                },
+                {
+                  "text": "Kann ich jetzt schon etwas unternehmen, obwohl meine Anlage erst in ein paar Jahren aus der Förderung fällt?"
+                }
+              ]
+            },
+            {
+              "title": "Kontakt",
+              "segments": [
+                {
+                  "text": "EEG & Einspeiser"
+                },
+                {
+                  "text": "+49 7151 131-188"
+                },
+                {
+                  "text": "E-Mail senden"
                 }
               ]
             }

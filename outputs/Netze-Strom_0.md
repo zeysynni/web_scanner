@@ -1,140 +1,178 @@
-# Stromnetz
+# Stromnetz | Stadtwerke Waiblingen
 *URL: https://www.stadtwerke-waiblingen.de/Netze/Stromnetz*
+
+## Stromnetz
 
 Wir sind für Sie da - und das Rund um die Uhr. Die Vernetzung rund um Waiblingen ist unser Aufgabengebiet. Dabei sorgen wir dafür, dass die Leitungen für Strom, Gas, Wasser und Glasfaser in einem guten Zustand sind. Hier finden Sie alle Informationen rund um unser Netzbereich.
 
-## Anmeldung E-Ladestation
+## Grund- & Ersatzversorgung
 
-### Anmeldung E-Ladestation
+Feststellung des Grundversorgers Strom gemäß § 36 Abs. 2 EnWG
 
-Die Nutzung von Ladeinfrastruktur für Elektromobilität muss beim jeweiligen Netzbetreiber gemeldet werden. Um langfristig eine reibungslose Versorgungssicherheit zu gewährleisten, melden Sie bitte Ihre Wallbox mit untenstehendem Anmeldeformular bei Ihrem Netzbetreiber, den Stadtwerken Waiblingen, an.
+Die Stadtwerke Waiblingen GmbH hat gemäß § 36 Abs. 2 EnWG als Betreiber von Energieversorgungsnetzen der allgemeinen Versorgung nach § 18 Abs. 1 EnWG erstmals zum 01.07.2006 den Grundversorger für die nächsten drei Kalenderjahre festgestellt.
 
-Falls Ihre Ladestation eine Leistung größer als 4,2 kW hat, muss diese laut §14a EnWG zwingend steuerbar sein.
+### Grundversorgung
 
-Anmeldeformular Ladeeinrichtungen zur Ergaenzung TAB 2007 Stand Oktober 2022 (PDF)
+Grundversorger bis 31.12.2027 (aktuelle Feststellung)
 
-Antrag Anmeldung steuVE nach §14a EnWG (PDF)
+Sowohl für das Elektrizitätsversorgungsnetz als auch für das Gasversorgungsnetz der Stadtwerke Waiblingen GmbH wurde bis zum 31.12.2024 die Stadtwerke Waiblingen GmbH als Grundversorger festgestellt.
 
-### Anfrage Netzanschlussprüfung
+Grundversorger bis 31.12.2024
 
-Sehr geehrte Kundin, sehr geehrter Kunde, gerne führen wir bei Ihnen eine Netzanschlussprüfung durch, um Ihre Individuallösung einer Ladeinfrastruktur zu ermöglichen. Bitte füllen Sie hierzu das untenstehende Formular aus. Sobald wir Ihre Anfrage geprüft haben, melden wir uns bei Ihnen. Bitte je Hausanschluss eine Anfrage stellen.
+Sowohl für das Elektrizitätsversorgungsnetz als auch für das Gasversorgungsnetz der Stadtwerke Waiblingen GmbH wurde bis zum 31.12.2024 die Stadtwerke Waiblingen GmbH als Grundversorger festgestellt.
 
-Kontaktdaten: Name, Vorname, Telefon, E-Mail, Straße, Hausnummer (Netzanschluss), Ort (mit Teilort)
+Grundversorger bis 31.12.2021
 
-Gebäudeeinheit: Objektart (Einfamilienhaus, Mehrfamilienhaus, gewerblich genutztes Objekt), Anzahl der Parteien im Gebäude/in der WEG, Anzahl der Aufzüge (falls vorhanden), Sonstiges, Angabe zur maximalen Leistung der Starkstromverbraucher
+Sowohl für das Elektrizitätsversorgungsnetz als auch für das Gasversorgungsnetz der Stadtwerke Waiblingen GmbH wurde bis zum 31.12.2021 die Stadtwerke Waiblingen GmbH als Grundversorger festgestellt.
 
-Elektrische Heizung: Durchlauferhitzer, Nachtspeicherheizung, Wärmepumpe
+Grundversorger bis 31.12.2018
 
-Angabe zur maximalen Leistung der Heizung
+Sowohl für das Elektrizitätsversorgungsnetz als auch für das Gasversorgungsnetz der Stadtwerke Waiblingen GmbH wurde bis zum 31.12.2018 die Stadtwerke Waiblingen GmbH als Grundversorger festgestellt.
 
-Warmwasserversorgung: Zentrale Öl-/Gasheizung, Sonstige
+Grundversorger bis 31.12.2015
 
-Hausanschluss: Wie hoch ist die Hausanschlusssicherung (Ampere)? 3x, Foto vom Hausanschlusskasten als Bilddatei
+Sowohl für das Elektrizitätsversorgungsnetz als auch für das Gasversorgungsnetz der Stadtwerke Waiblingen GmbH wurde bis zum 31.12.2015 die Stadtwerke Waiblingen GmbH als Grundversorger festgestellt.
 
-Ladestation: Gewünschte Ladeleistung je Hausanschluss, Anzahl der Ladepunkte, Installationsort (Garage, Carport, Stellplatz, Tiefgarage), Anzahl der Stellplätze insgesamt, Beschreibung der genauen Lage der Tiefgarage
+Grundversorger bis 31.12.2009
 
-Datenschutz: Datenschutzbestimmungen der Stadtwerke Waiblingen GmbH, Zustimmung zu den Datenschutzbestimmungen
+Sowohl für das Elektrizitätsversorgungsnetz als auch für das Gasversorgungsnetz der Stadtwerke Waiblingen GmbH wurde bis zum 31.12.2009 die Stadtwerke Waiblingen GmbH als Grundversorger festgestellt.
 
-Absenden
+### Ersatzversorgung
 
-Kontakt E-Mobility Netze: +49 7151 131-123, E-Mail senden
+Das EnWG regelt auch die "Ersatzversorgung mit Energie" für die Haushalts-, Gewerbe und Landwirtschaftskunden. Von Ersatzversorgung wird gesprochen, wenn ein Kunde aus dem Stromnetz Energie bezieht, ohne dass dieser Bezug einer Lieferung oder einem bestimmten Liefervertrag zugeordnet werden kann, d. h. Strombezug ohne Liefervertrag.
 
-## Netzanschluss
+Solange Sie keinen Stromlieferungsvertrag abgeschlossen haben, werden Sie für maximal drei Monate zu den Konditionen der Ersatzversorgung beliefert.
 
-### Netzanschluss
+Die Ersatzversorgung wird im Netzgebiet Waiblingen von den Stadtwerken Waiblingen GmbH, Ihrem Grundversorger, durchgeführt.
 
-Allgemeine Bedingungen für den Netzanschluss Niederspannung
+## EEG & Einspeiser
 
-Allgemeine Anschlussbedingungen von Letztverbrauchern an das Niederspannungsnetz ergeben sich aus der Niederspannungsanschlussverordnung (NAV) sowie den Ergänzenden Bedingungen zur NAV der Stadtwerke Waiblingen GmbH.
+Hinweise zur Inbetriebnahme von Einspeise-Anlagen in Waiblingen
 
-Betrieb Ladeinfrastruktur für E-Mobilität: Bitte beachten Sie die geänderte Ergänzung zur TAB 2007 für den Betrieb von Ladeinfrastruktur im Versorgungsgebiet der Stadtwerke Waiblingen.
+Für neu zu errichtende EEG-/KWK-Anlagen müssen Anlagenbetreiber und Anlageninstallateure einige Vorgaben beachten. Die Erfüllung der Anforderungen des jeweiligen Netzbetreibers ist Grundvoraussetzung für die Energieeinspeisung.
 
-Technische Mindestanforderungen für Auslegung und Betrieb von Anschlüssen bzw. Anlagen durch Stromnetzbetreiber:
+"Die notwendige Registrierung im Marktstammdatenregister können Sie hier vornehmen:"
 
-TAB 2007 (technische Anschlussbedingungen)
+Registrierung im Marktstammdatenregister: https://www.marktstammdatenregister.de/MaStR
 
-Ergänzung zu den TAB 2007 - STWWN
+### Anforderungen an neue Photovoltaik-Anlagen
 
-Ergänzung zu den TAB 2007 (EEG / KWK-G)
+Ablauf: Um einen reibungslosen Ablauf zu gewährleisten, lassen Sie uns bitte sämtliche Unterlagen mindestens 2 Werktage vorher per Post oder E-Mail zukommen. Bei Photovoltaik-Anlagen mit Selbstverbrauch ist die Fertigmeldung der Stadtwerke Waiblingen einzureichen. Installateure, die nicht bei den Stadtwerken Waiblingen registriert sind, müssen mit der Fertigmeldung eine Kopie der Konzession mitschicken.
 
-Distribution Code 2003
+Wir benötigen folgende Nachweise und Formulare:
 
-Metering Code 2006
+Eine Konformitätserklärung und Unbedenklichkeitsbescheinigung
 
-VDEW Richtlinie „Eigenerzeugung am Niederspannungsnetz“
+Datenblätter für Module, Wechselrichter und ggf. Speicher
 
-VDEW Richtlinie „Notstromaggregate“
+Die nachfolgenden Formulare:
 
-Sämtliche sonstige VDE–Vorschriften und VDN/VDEW-Richtlinien zur Erstellung und zum Betrieb elektrischer Anlagen.
+Fertigmeldung Strom.pdf (Bei Photovoltaik-Anlagen mit Selbstverbrauch ist die Fertigmeldung in zweifacher Ausfertigung einzureichen. Wenn möglich, bitte sämtliche Unterlagen/Dokumente elektronisch per E-Mail senden.)
 
-Downloads Netzanschluss:
+Meldung an das Marktstammdatenregister.pdf
 
-Anlage zu den Ergänzenden Bedingungen Strom NAV-Preisblatt Strom 15.01.2026 (PDF | 563 KB)
+Bestellung Einspeisemanagement.pdf
 
-Anlage zu den Ergänzenden Bedingungen Strom NAV-Preisblatt Strom ab 01.01.2025 (PDF | 444 KB)
+Bestaetigung Einspeisemanagement.pdf
 
-Antrag_Anmeldung_steuVE_nach §14a EnWG (PDF | 379 KB)
+Inbetriebsetzungsprotokoll für Erzeugungsanlagen NS-A.pdf
 
-Ergänzende Bedingungen NAV (PDF | 91 KB)
+VBEW-Messkonzepte 2024.pdf
 
-Ergänzung zur TAB 2007 Strom Dezember 2017 (PDF | 585 KB)
+VBEW-Messkonzepte und Abrechnungshinweise.pdf
 
-Netzanschluss Strom Mittelspannnung 2025 (PDF | 349 KB)
+Leitfaden EEG-KWK - Eigenversorgung.pdf
 
-Preise Aufgrund Zahlungsverzug und Unterbrechung der Stromversorgung (PDF | 40 KB)
+Formular Begrenzung 60 Prozent Einspeiseleistung.pdf
 
-Strom NAV Mai 2011 (PDF | 140 KB)
+Antrag auf Volleinspeisebonus 2026 A.pdf
 
-Vertrag Netzanschluss Strom Niederspannung 2025 (PDF | 342 KB)
+Aus steuerrechtlichen Gründen müssen alle oben genannten Formulare und Nachweise auf den gleichen Namen ausgestellt werden. Die namentliche Bezeichnung des Anlagenerrichters ist auch vom ausführenden Elektro-Installateur zu verwenden.
 
-Vertrag Nutzung Anschluss Strom Mittelspannung 2025 (PDF | 300 KB)
+### Anforderungen an neue KWK-Anlagen
 
-Zustimmung Grundstückseigentümer Strom 26.08.2025 A (PDF | 245 KB)
+Ablauf: Um einen reibungslosen Ablauf zu gewährleisten, lassen Sie uns bitte sämtliche Unterlagen mindestens 2 Werktage vorher per Post oder E-Mail zukommen. Bei Fotovoltaik-Anlagen mit Selbstverbrauch ist die Fertigmeldung der Stadtwerke Waiblingen einzureichen. Installateure, die nicht bei den Stadtwerken Waiblingen registriert sind, müssen mit der Fertigmeldung eine Kopie der Konzession mitschicken. Unterlagen per Fax werden nicht akzeptiert.
 
-Informationen zum Messstellenbetrieb finden Sie hier.
+Wir benötigen folgende Nachweise und Formulare:
 
-Isolierung von Freileitungen: Den Auftrag für die Isolierung von Freileitungen können Sie hier herunterladen:
+Eine Konformitätserklärung und Unbedenklichkeitsbescheinigung
 
-Auftrag zur Durchführung von Arbeiten am Freileitungsnetz 15.01.2026.pdf
+Das VDEW-Datenblatt für Erzeugungsanlagen
 
-Kontakt:
+Die BAFA-Bescheinigung
 
-Technische Kundenberatung Strom: +49 7151 131-188, E-Mail senden
+Die nachfolgenden Formulare:
 
-## Netzzugang & Verträge
+Fertigmeldung Strom.pdf
 
-### Netzzugang & Verträge
+Inbetriebsetzungsprotokoll für Erzeugungsanlagen NS-A.pdf
 
-Lieferantenrahmenvertrag
+VBEW-Messkonzepte 2024.pdf
 
-Lieferantenrahmenvertrag Strom ab 01.04.2022 (PDF | 10.16 MB)
+VBEW-Messkonzepte und Abrechnungshinweise.pdf
 
-EDI-Rahmenvertrag
+Leitfaden EEG-KWK - Eigenversorgung.pdf
 
-EDI Vereinbarung Strom ab 01.09.2018 (PDF | 244 KB)
+Meldung an das Marktstammdatenregister.pdf
 
-Vereinbarung über den elektronischen Datenaustausch 01.04.22 (PDF | 278 KB)
+Fragenbogen zur Eigenversorgung EEG_Formular.pdf
 
-Kontaktdatenblatt und Zertifikate
+Aus steuerrechtlichen Gründen müssen alle oben genannten Formulare und Nachweise auf den gleichen Namen ausgestellt werden. Die namentliche Bezeichnung des Anlagenerrichters ist auch vom ausführenden Elektro-Installateur zu verwenden.
 
-Nachweis für Wiederverkäufer bis 20.07.2026 (PDF | 400 KB)
+### Balkon-PV-Anlagen
 
-Waiblingen Kontaktdatenblatt Messstellenbetreiber.xlsx
+Die Energiewende liegt Ihnen am Herzen und Sie möchten sich mit einer steckerfertigen Erzeugungsanlage, einer sogenannten Balkon-PV-Anlage, beteiligen?
 
-Waiblingen Kontaktdatenblatt Netz Strom.xlsx
+Im Niederspannungsnetz der Stadtwerke Waiblingen GmbH können steckerfertige Erzeugungsanlagen gemäß den anerkannten Voraussetzungen installiert, angeschlossen und betrieben werden.
 
-Ausstellerzertifikate - procilonGROUP.zip
+Bis zu einer installierten Modulleistung von 2.000 Watt und einer Wechselrichterleistung von maximal 800 Watt ist für Ihre steckerfertige Anlage lediglich die Registrierung im Marktstammdatenregister notwendig. Eine gesonderte Anmeldung bei uns als Netzbetreiber ist nicht erforderlich.
 
-edifact@sw-waiblingen.de.cer.zip (Neues Browserfenster: DARZ_Seite - alle Zertifikate zur Smart Metering Public Key Infrastructure (SM-PKI))
+Ein eventuell erforderlicher Zählerwechsel erfolgt automatisch durch den Messstellenbetreiber.
 
-Download AS4 Zertifikat (Neues Browserfenster: DARZ_Seite - alle Zertifikate zur Smart Metering Public Key Infrastructure (SM-PKI))
+Alle wichtigen und aktuellen Informationen zu steckerfertigen Balkon-PV-Anlagen finden Sie auf den Internetseiten des VDE (Verband der Elektrotechnik Elektronik Informationstechnik e.V.).
 
-Weitere Downloads
+### Hinweis für Einspeisemanagement nach § 6 EEG
 
-Sperrauftrag (BK6-20-160) (PDF | 118 KB)
+Hinweis für Einspeisemanagement nach § 6 EEG
 
-Zuordnungsvereinbarung ab 01.04.22 (PDF | 364 KB)
+### Registrierungspflicht für Stromerzeugungsanlagen
 
-Kontakt Netznutzung: +49 7151 131-322, E-Mail senden
+Registrierungspflicht für Stromerzeugungsanlagen
+
+### Information zum Steuerbarkeitscheck gemäß § 12 Abs. 2a-h EnWG
+
+Im Zuge der Umsetzung des § 12 Abs. 2a-h des Energiewirtschaftsgesetzes (EnWG) informieren wir Sie über den anstehenden Steuerbarkeitscheck Ihrer Erzeugungsanlage(n), die an unser Verteilnetz angeschlossen sind:
+
+Informationen zum Steuerbarkeitscheck - Stadtwerke Waiblingen: /resources/01%20Website/Unterseiten/Stromnetz/EEG%20%26%20Einspeiser/Informationen%20zum%20Steuerbarkeitscheck%20-%20Stadtwerke%20Waiblingen.pdf
+
+### Informationen für Anlagenbetreiber gemäß EEG 2021
+
+Wann endet der Anspruch auf die EEG-Förderung?
+
+Was geschieht nach dem Ende der EEG-Förderung?
+
+Kann ich meine Anlage nach dem Förderende überhaupt weiterbetreiben?
+
+Wie kann ich meine Anlage nach dem Förderende weiterbetreiben?
+
+Sollte ich einen Heimspeicher installieren?
+
+Muss ich bei Eigenverbrauch des erzeugten Stroms Steuer, Abgaben oder Umlagen zahlen?
+
+Was ist die wirtschaftlichste Option für meine Anlage?
+
+Benötige ich ein intelligentes Messsystem?
+
+Macht es Sinn, die Bestands- gegen eine Neuanlage auszutauschen?
+
+Kann ich jetzt schon etwas unternehmen, obwohl meine Anlage erst in ein paar Jahren aus der Förderung fällt?
+
+### Kontakt
+
+Kontakt EEG & Einspeiser
+
++49 7151 131-188
+
+E-Mail senden
 
 ---
