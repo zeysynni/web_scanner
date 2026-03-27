@@ -3,6 +3,8 @@ from datetime import datetime
 import json
 from rich.console import Console
 from rich.markdown import Markdown
+import pypandoc
+import os
 
 def save_markdown(markdown_text: str,output_dir: str = "outputs",filename: str | None = None,encoding: str = "utf-8") -> Path:
     """
@@ -53,15 +55,31 @@ def print_markdown(result):
 def json_to_markdown(data: dict) -> str:
     lines = []
 
-    for page in data["pages"]:
-        # Page header
-        lines.append(f"*URL: {page['url']}*")
+    for page in data.get("pages", []):
+        # Page metadata
+        lines.append(f"# {page.get('title', '')}")
+        lines.append("")
+        lines.append(f"*URL: {page.get('url', '')}*")
         lines.append("")
 
-        for block in page.get("block", []):
-            lines.append(f"## {block['heading']}")
+        if page.get("introduction"):
+            lines.append(page["introduction"])
             lines.append("")
 
+        # Blocks
+        for block in page.get("blocks", []):
+            lines.append(f"## {block.get('heading', '')}")
+            lines.append("")
+
+            if block.get("subheading"):
+                lines.append(f"### {block['subheading']}")
+                lines.append("")
+
+            if block.get("introduction"):
+                lines.append(block["introduction"])
+                lines.append("")
+
+            # Segments
             for segment in block.get("segments", []):
                 if segment.get("text"):
                     lines.append(segment["text"])
@@ -81,13 +99,20 @@ def json_to_markdown(data: dict) -> str:
                     lines.append(segment["contacts"])
                     lines.append("")
 
+                # FAQs (structured properly)
                 if segment.get("FAQs"):
-                    for qa in segment["FAQs"].get("QAs", []):
-                        lines.append(f"**{qa['question']}**")
-                        lines.append(qa["answer"])
+                    faq = segment["FAQs"]
+
+                    if faq.get("title"):
+                        lines.append(f"### {faq['title']}")
                         lines.append("")
 
-        # Page separator
+                    for qa in faq.get("QAs", []):
+                        lines.append(f"**{qa.get('question', '')}**")
+                        lines.append("")
+                        lines.append(qa.get("answer", ""))
+                        lines.append("")
+
         lines.append("---")
         lines.append("")
 
@@ -102,9 +127,31 @@ def save_markdown_from_json(json_path: str, md_path: str) -> None:
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(markdown)
 
+def md_to_pdf(input_md_path: str, output_pdf_path: str):
+    """
+    Convert a Markdown (.md) file to a PDF file.
+
+    Args:
+        input_md_path (str): Path to the input .md file
+        output_pdf_path (str): Path to save the output .pdf file
+    """
+    if not os.path.exists(input_md_path):
+        raise FileNotFoundError(f"Input file not found: {input_md_path}")
+
+    try:
+        pypandoc.convert_file(
+            input_md_path,
+            to="pdf",
+            outputfile=output_pdf_path,
+            extra_args=["--pdf-engine=xelatex"]  # or pdflatex
+        )
+        print(f"PDF successfully created at: {output_pdf_path}")
+    except Exception as e:
+        raise RuntimeError(f"Conversion failed: {e}")
+
 if __name__ == "__main__":
     # save json to md
-    input_path = Path("outputs/Unternehmen.json")
+    input_path = Path("rest/Unternehmen_0.json")
     output_path = input_path.with_suffix(".md")
 
     with open(input_path, "r", encoding="utf-8") as f:

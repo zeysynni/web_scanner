@@ -54,5 +54,9 @@ def get_user_prompt_structured_output(url, structure):
     - Do not navigate to other webpages or open any files.
     - Click all expandable elements one after another to reveal hidden content.
     - You must extract text exactly as shown on the webpage.
+    - Always follow exactly the given structure and instructions.
+
+    Important:
+    - Never click on any Telefonnumber.
     """
 

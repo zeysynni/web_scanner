@@ -57,7 +57,32 @@ structure_kontakt ="""
 structure_Kundenportal ="""
 - Kundenportal (Hier musst du info geben, was das Kundenportal anbietet)
 """
-
+structure_Sidebar ="""
+- Alles auf der Webpage
+"""
+structure_PrivateKunden_Strom ="""
+- Strom (Komplette Webpage)
+  (Auf der Webpage Strom findest du folgenden Themen, die Themen nacheinander klicken, die Webpage komplett crawlen, nicht mehr tiefer gehen und wieder zurück zu Strom und das nächste Thema klicken)
+  - Ökostromtarif 
+  - Wärmestrom 
+  - Grundversorgung 
+  - Preisinformation 
+  - Stromkennzeichnung 
+"""
+structure_PrivateKunden_Service_1 ="""
+- Service (Komplette Webpage)
+  (Anweisung: Auf der Webpage Service findest du folgenden Themen, die Themen nacheinander klicken, die Webpage komplett crawlen, nicht mehr tiefer gehen und wieder zurück zu Service und das nächste Thema klicken)
+  - Zählerstand mitteilen
+  - Umzugsservice
+  - Abrechnung&Zahlung
+"""
+structure_PrivateKunden_Service_2 ="""
+- Service (Komplette Webpage)
+  (Anweisung: Auf der Webpage Service findest du folgenden Themen, die Themen nacheinander klicken, die Webpage komplett crawlen, nicht mehr tiefer gehen und wieder zurück zu Service und das nächste Thema klicken)
+  - Abschläge berechnen & verstehen
+  - Energiesparen
+  - Warnung vor Betrugsversuchen
+"""
 #[structure_netze_strom_1, structure_netze_strom_2, structure_netze_strom_3, structure_netze_erdgas_1, structure_netze_erdgas_2, structure_netze_was_glas, strucutre_netze_mess_plan]
 
 structure_ = {
@@ -68,9 +93,8 @@ structure_ = {
     },
 }
 structure = {
-    "Kundenportal": {
-        "url": "https://privatkundenportal.net/waiblingen/",
-        "subpart": [structure_Kundenportal],
-
+    "PrivakKunden_Service": {
+        "url": "https://www.stadtwerke-waiblingen.de/Privatkunden/Service",
+        "subpart": [structure_PrivateKunden_Service_1],
     },
 }
