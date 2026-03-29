@@ -57,67 +57,46 @@ def json_to_markdown(data: dict) -> str:
 
     for page in data.get("pages", []):
         # Page metadata
-        lines.append(f"# {page.get('title', '')}")
-        lines.append("")
         lines.append(f"*URL: {page.get('url', '')}*")
         lines.append("")
-
-        if page.get("introduction"):
-            lines.append(page["introduction"])
-            lines.append("")
 
         # Blocks
         for block in page.get("blocks", []):
             lines.append(f"## {block.get('heading', '')}")
             lines.append("")
 
-            if block.get("subheading"):
-                lines.append(f"### {block['subheading']}")
-                lines.append("")
-
-            if block.get("introduction"):
-                lines.append(block["introduction"])
-                lines.append("")
-
             # Segments
             for segment in block.get("segments", []):
+                if segment.get("subheading"):
+                    lines.append(f"### {segment['subheading']}")
+                    lines.append("")
                 if segment.get("text"):
                     lines.append(segment["text"])
                     lines.append("")
-
-                if segment.get("table"):
-                    lines.append(segment["table"])
-                    lines.append("")
-
                 if segment.get("files"):
                     lines.append("**Dateien:**")
                     lines.append(segment["files"])
                     lines.append("")
-
-                if segment.get("contacts"):
-                    lines.append("**Kontakt:**")
-                    lines.append(segment["contacts"])
-                    lines.append("")
-
-                # FAQs (structured properly)
                 if segment.get("FAQs"):
                     faq = segment["FAQs"]
-
                     if faq.get("title"):
                         lines.append(f"### {faq['title']}")
                         lines.append("")
-
                     for qa in faq.get("QAs", []):
                         lines.append(f"**{qa.get('question', '')}**")
                         lines.append("")
                         lines.append(qa.get("answer", ""))
                         lines.append("")
+                if segment.get("contacts"):
+                    lines.append("**Kontakt:**")
+                    lines.append(segment["contacts"])
+                    lines.append("")
 
         lines.append("---")
         lines.append("")
 
     return "\n".join(lines)
-
+    
 def save_markdown_from_json(json_path: str, md_path: str) -> None:
     with open(json_path, encoding="utf-8") as f:
         data = json.load(f)

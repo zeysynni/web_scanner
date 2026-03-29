@@ -44,7 +44,7 @@ async def launch_crawler(agent, topic, message):
     run_config = RunConfig(
         model_provider=OpenAIProvider(openai_client=openai_client),
         model_settings=ModelSettings(
-            temperature=0
+            temperature=0,
             )
     )
     with trace(f"{topic}"):

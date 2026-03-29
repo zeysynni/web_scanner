@@ -1,76 +1,130 @@
 from pydantic import BaseModel, Field
-from typing import List, Optional, Union, Literal
+from typing import List, Optional
 
-# The structure for Netze/Strom
-class ContentSegment(BaseModel):
-    text: str = Field(
+class QA(BaseModel):
+    question: str = Field(
         description=(
-            "Exact text copied from the webpage. "
-            "Do not summarize, shorten, or paraphrase."
-            "Could also be a hint of a file."
+            "The visible heading or question text of a clickable expandable element (plus button, arrow, accordion). "
+            "Click the element first, wait 1 second, then copy the text EXACTLY as shown on the webpage. "
+            "Never invent or paraphrase."
+        )
+    )
+    answer: str = Field(
+        description=(
+            "The hidden content revealed AFTER clicking the expandable element. "
+            "Wait 1 second after clicking before reading. "
+            "Copy EXACTLY as shown – never use the question text as the answer. "
+        )
+    )
+
+class FAQ(BaseModel):
+    title: Optional[str] = Field(
+        default=None,
+        description=(
+            "The visible section title if present. "
+            "This section can have many names: 'FAQ', 'Häufige Fragen', 'Allgemeine Informationen', "
+            "'Hinweis', 'Wichtige Informationen', 'Sie haben Fragen?', or any section "
+            "where content is hidden behind clickable plus buttons or arrows. "
+            "Copy exactly as shown."
+        )
+    )
+    QAs: List[QA] = Field(
+        description=(
+            "List of all expandable elements on this page – regardless of section name. "
+            "ANY clickable plus button, arrow, or accordion element belongs here. "
+            "This includes: FAQ questions, Hinweise, Allgemeine Informationen, "
+            "technical details, pricing info, or ANY other expandable content. "
+            "If you see a clickable plus or arrow anywhere on the page, it belongs here. "
+            "Click EVERY single one – none may be skipped."
+        )
+    )
+
+class ContentSegment(BaseModel):
+    subheading: Optional[str] = Field(
+        default=None,
+        description=(
+            "A visible subheading inside this Block. "
+            "Smaller than the heading but larger than normal text. "
+            "Use markdown. "
+            "FAQ doesn't belong to this. "
+        )
+    )
+    text: Optional[str] = Field(
+        default=None,
+        description=(
+            "Plain descriptive paragraph text ONLY – use this as last resort. "
+            "NOT for: expandable elements, FAQs, files, or contact info. "
+            "Only use this field if the content fits NO other field. "
+            "Copy exactly as shown. Do not summarize, shorten, or paraphrase."
+            "Use Markdown. "
+        )
+    )
+    files: Optional[str] = Field(
+        default=None,
+        description=(
+            "Names of downloadable files listed in this area (mostly PDFs). "
+            "List each file name on a new line."
+        ),
+        json_schema_extra={"example": "Preisblatt_2024.pdf\nAGB.pdf"}
+    )
+
+    contacts: Optional[str] = Field(
+        default=None,
+        description=(
+            "Contact information found in this segment. "
+            "Include phone numbers and what they are for. "
+            "Ignore email addresses. "
+            "Copy exactly as shown. Do not summarize or paraphrase."
         )
     )
 
 class Block(BaseModel):
-    title: Optional[str] = Field(
+    heading: str = Field(
         description=(
-            "Title of the block if visible on the webpage "
-            "(e.g. FAQ question or accordion title)."
-            "Do not invent titles."
+            "The visible title of a colored container/box on the page. "
+            "A new Block starts every time a new colored container or visually distinct section begins. "
+            "Usually the largest or most prominent text in the container, often colored or bold. "
+            "If the container has no visible title, use the first prominent text inside it. "
+            "Do not invent headings. Do not merge multiple containers into one Block. "
+            "Use Markdown (## or ###)."
         )
     )
     segments: List[ContentSegment] = Field(
         description=(
-            "Each segment should represent a logical subpart such as "
-            "a paragraph, list item, name of a file for downloading, or subsection."
-        )
-    )
-
-class Section(BaseModel):
-    heading: str = Field(
-        description=(
-        "Visible heading exactly as shown on the webpage. "
-        "Do not invent headings. If no heading exists, use the nearest visible title."
-    )
-    )
-    subheading: Optional[str] = Field(
-        description=(
-        "Subheading directly after heading"
-        "Visible subheading exactly as shown on the webpage. "
-        "Do not invent subheadings. If no subheading exists, leave this empty."
-        ),
-        example = "Allgemeinte Informationen"
-    )
-    blocks: List[Block] = Field(
-        description=(
-            "All content blocks belonging to this section in the same order "
-            "as they appear on the webpage."
+            "All content inside this container. "
+            "A segment represents one type of content: FAQs, table, contacts, files, or text. "
+            "One block can have multiple segments of different types. "
+            "Always check for FAQs and expandable elements first before using text."
         )
     )
 
 class Page(BaseModel):
     url: str = Field(
-        description="URL of the crawled webpage."
-    )
-
-    title: str = Field(
-        description="Main page title (usually H1)."
-    )
-    instruction: Optional[str] = Field(
-        description="instructional text before all the sections. ",
-        example="Wir sind für Sie da ..."
-    )
-    sections: List[Section] = Field(
-        description="All sections appearing on the webpage."
-    )
-    contact: str = Field(
         description=(
-            "Contact information like telephone number. "
-            "Copy exactly from the webpage."
-        ),
-        example="Telefonnummer starts with +49"
+            "The actual URL of this webpage. "
+            "Update this every time you navigate to a new page. "
+            "Copy the real URL from the browser – never invent it."
+        )
+    )
+    blocks: List[Block] = Field(
+        description=(
+            "One Block per colored container/box on the page. "
+            "A page with 4 containers = 4 Block objects. "
+            "Start a new Block every time you see a new colored container or visually distinct section. "
+            "Do not merge multiple containers into one Block. "
+        )
     )
 
 class Webpages(BaseModel):
-    base_url: str
-    pages: list[Page]
+    base_url: str = Field(
+        description="The starting URL provided in the user prompt."
+    )
+    pages: List[Page] = Field(
+        description=(
+            "One Page object for every webpage visited. "
+            "The base page is the first Page. "
+            "If you click on a button on the base page to enter another page, create a new Page object. "
+            "In each page, crawl from top to bottom, don't ignore anything."
+            "Use markdown format everywhere to keep the original look. "
+        )
+    )
