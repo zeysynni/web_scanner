@@ -2,6 +2,8 @@
 
 ## Unternehmen
 
+### Regional verbunden – Sicher. Wirtschaftlich. Nachhaltig.
+
 Waiblingen ist eine Stadt zum Wohlfühlen. Und damit das so bleibt, tun wir einiges: Wir schaffen Arbeitsplätze. Wir betreiben die Bäder. Wir versorgen Sie mit Strom, Erdgas, Wasser, Wärme, Glasfaser und E-Mobilität. Zuverlässig, zu fairen Preisen, umweltfreundlich und 100 % unabhängig.
 
 Denn Waiblingen ist nicht einfach irgendein Standort. Hier ist unsere Heimat.
@@ -38,30 +40,20 @@ Stand: 31.12.2024
 
 | Kennzahl                          | Wert          |
 |----------------------------------|---------------|
-| Gasabsatz (Vertrieb)              | 201,8 Mio. kWh|
-| Gasabsatz (Netz)                  | 338,2 Mio. kWh|
-| Leitungsnetz                     | 241 km        |
-| Hausanschlüsse                   | 6.326         |
+| Gasabsatz (Vertrieb)             | 201,8 Mio. kWh|
+| Gasabsatz (Netz)                 | 338,2 Mio. kWh|
+| Leitungsnetz                    | 241 km        |
+| Hausanschlüsse                  | 6.326         |
 | Eingebaute Gaszähler             | 8.100         |
 
 Stand: 31.12.2024
 
 | Kennzahl                          | Wert          |
 |----------------------------------|---------------|
-| Wasserabsatz                     | 2,9 Mio. m³   |
-| Leitungsnetz                     | 414,2 km      |
-| Hausanschlüsse                   | 11.136        |
-| Eingebaute Wasserzähler          | 14.697        |
-
-Stand: 31.12.2024
-
-| Kennzahl                          | Wert          |
-|----------------------------------|---------------|
-| Wärmeabsatz                     | 32,3 Mio. kWh |
-| Wärmenetze                      | 13            |
-| Fernwärmenetz                   | 40,9 km       |
-| Fernwärme-Hausanschlüsse/Übergabestationen | 441           |
-| Eingebaute Wärmezähler          | 551           |
+| Wasserabsatz                    | 2,9 Mio. m³   |
+| Leitungsnetz                   | 414,2 km      |
+| Hausanschlüsse                 | 11.136        |
+| Eingebaute Wasserzähler         | 14.697        |
 
 Stand: 31.12.2024
 
@@ -75,14 +67,19 @@ Stand: 31.12.2024
 ## Ansprechpartner
 
 **Kontakt:**
+Kontakt allgemein
 +49 7151 131-0
+Forderungsmanagement
 +49 7151 131-160
+Technische Kundenberatung Gas/Wasser
 +49 7151 131-414
+Vertrieb
 +49 7151 131-190
 
 ## Presse
 
 **Kontakt:**
+Unternehmenskommunikation & Marketing
 +49 7151 131-198
 
 ## Kunden-Center
@@ -125,15 +122,10 @@ Unsere Tochterfirma "Nachhaltige Energielösungen Waiblingen GmbH" (kurz NEW) wu
 Die Dienstleistungen umfassen unter Anderem:
 
 Photovoltaik-Anlagen
-
 E-Mobilität
-
 Energiedatenmanagement
-
 Drohnen-Dienstleistungen
-
 Quartierskonzepte
-
 Digitalisierung und IT
 
 Hier geht's zur NEW
@@ -143,5 +135,34 @@ Hier geht's zur NEW
 Bei uns erwartet Sie mehr als nur ein Job: Wir bieten einen sicheren Arbeitsplatz mit Verantwortung, Sinn und regionalem Bezug. Ob Energiewende, Klimaschutz oder soziale Projekte – gestalten Sie mit uns die Zukunft unserer Region aktiv mit.
 
 Ihre Karriere bei uns
+
+## Kontakt allgemein
+
+**Kontakt:**
+Kontakt allgemein
++49 7151 131-0
+
+## So erreichen Sie uns
+
+Schorndorfer Straße 67
+71332 Waiblingen
+
+07151 131-0
+
+## Unsere Öffnungszeiten
+
+Montag 08:00 - 12:00 & 14:00 - 17:00 Uhr
+Dienstag 08:00 - 12:00 & 14:00 - 17:00 Uhr
+Mittwoch 08:00 - 12:00 Uhr
+Donnerstag 08:00 - 12:00 & 14:00 - 17:00 Uhr
+Freitag 08:00 - 12:00 Uhr
+
+## Ergänzende Links zur Webseite
+
+## Social Media Links
+
+## Infos zur Barrierefreiheit
+
+## Rechtliches
 
 ---

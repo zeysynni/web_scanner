@@ -1,6 +1,5 @@
-# Stromnetz | Stadtwerke Waiblingen
-
-*URL: [https://www.stadtwerke-waiblingen.de/Netze/Stromnetz](https://www.stadtwerke-waiblingen.de/Netze/Stromnetz)*
+# Stromnetz
+*URL: https://www.stadtwerke-waiblingen.de/Netze/Stromnetz*
 
 Wir sind für Sie da - und das Rund um die Uhr. Die Vernetzung rund um Waiblingen ist unser Aufgabengebiet. Dabei sorgen wir dafür, dass die Leitungen für Strom, Gas, Wasser und Glasfaser in einem guten Zustand sind. Hier finden Sie alle Informationen rund um unser Netzbereich.
 
@@ -20,9 +19,31 @@ Antrag Anmeldung steuVE nach §14a EnWG (PDF)
 
 Sehr geehrte Kundin, sehr geehrter Kunde, gerne führen wir bei Ihnen eine Netzanschlussprüfung durch, um Ihre Individuallösung einer Ladeinfrastruktur zu ermöglichen. Bitte füllen Sie hierzu das untenstehende Formular aus. Sobald wir Ihre Anfrage geprüft haben, melden wir uns bei Ihnen. Bitte je Hausanschluss eine Anfrage stellen.
 
+Kontaktdaten: Name, Vorname, Telefon, E-Mail, Straße, Hausnummer (Netzanschluss), Ort (mit Teilort)
+
+Gebäudeeinheit: Objektart (Einfamilienhaus, Mehrfamilienhaus, gewerblich genutztes Objekt), Anzahl der Parteien im Gebäude/in der WEG, Anzahl der Aufzüge (falls vorhanden), Sonstiges, Angabe zur maximalen Leistung der Starkstromverbraucher
+
+Elektrische Heizung: Durchlauferhitzer, Nachtspeicherheizung, Wärmepumpe
+
+Angabe zur maximalen Leistung der Heizung
+
+Warmwasserversorgung: Zentrale Öl-/Gasheizung, Sonstige
+
+Hausanschluss: Wie hoch ist die Hausanschlusssicherung (Ampere)? 3x, Foto vom Hausanschlusskasten als Bilddatei
+
+Ladestation: Gewünschte Ladeleistung je Hausanschluss, Anzahl der Ladepunkte, Installationsort (Garage, Carport, Stellplatz, Tiefgarage), Anzahl der Stellplätze insgesamt, Beschreibung der genauen Lage der Tiefgarage
+
+Datenschutz: Datenschutzbestimmungen der Stadtwerke Waiblingen GmbH, Zustimmung zu den Datenschutzbestimmungen
+
+Absenden
+
+Kontakt E-Mobility Netze: +49 7151 131-123, E-Mail senden
+
 ## Netzanschluss
 
 ### Netzanschluss
+
+Allgemeine Bedingungen für den Netzanschluss Niederspannung
 
 Allgemeine Anschlussbedingungen von Letztverbrauchern an das Niederspannungsnetz ergeben sich aus der Niederspannungsanschlussverordnung (NAV) sowie den Ergänzenden Bedingungen zur NAV der Stadtwerke Waiblingen GmbH.
 
@@ -76,13 +97,9 @@ Isolierung von Freileitungen: Den Auftrag für die Isolierung von Freileitungen 
 
 Auftrag zur Durchführung von Arbeiten am Freileitungsnetz 15.01.2026.pdf
 
-### Kontakt
+Kontakt:
 
-Technische Kundenberatung Strom
-
-+49 7151 131-188
-
-E-Mail senden
+Technische Kundenberatung Strom: +49 7151 131-188, E-Mail senden
 
 ## Netzzugang & Verträge
 
@@ -108,11 +125,9 @@ Waiblingen Kontaktdatenblatt Netz Strom.xlsx
 
 Ausstellerzertifikate - procilonGROUP.zip
 
-[edifact@sw-waiblingen.de.cer.zip](mailto:edifact@sw-waiblingen.de.cer.zip)
+edifact@sw-waiblingen.de.cer.zip (Neues Browserfenster: DARZ_Seite - alle Zertifikate zur Smart Metering Public Key Infrastructure (SM-PKI))
 
-Neues Browserfenster: DARZ_Seite - alle Zertifikate zur Smart Metering Public Key Infrastructure (SM-PKI)
-
-Download AS4 Zertifikat
+Download AS4 Zertifikat (Neues Browserfenster: DARZ_Seite - alle Zertifikate zur Smart Metering Public Key Infrastructure (SM-PKI))
 
 Weitere Downloads
 
@@ -120,13 +135,6 @@ Sperrauftrag (BK6-20-160) (PDF | 118 KB)
 
 Zuordnungsvereinbarung ab 01.04.22 (PDF | 364 KB)
 
-Kontakt
-
-Netznutzung
-
-+49 7151 131-322
-
-E-Mail senden
+Kontakt Netznutzung: +49 7151 131-322, E-Mail senden
 
 ---
-
