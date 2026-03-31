@@ -298,14 +298,14 @@ Geschaeftskunden_Strom = {
 }
 
 structure_Geschaeftskunden_Erdgas_Grundversorgung ="""
-(Instruction: crawl each page completely, then go to the next page. Don't miss anything, especially the contact informations. )
+(Instruction: crawl the base page completely, then go to the next page. Don't miss anything, especially the contact informations. )
 - Erdgas
   - Grundversorgung
 """
 Geschaeftskunden_Erdgas_Grundversorgung = {
   "title":  "Geschaeftskunden_Erdgas_Grundversorgung",
   "structure": structure_Geschaeftskunden_Erdgas_Grundversorgung,
-  "url": "https://www.stadtwerke-waiblingen.de/Geschäftskunden/Erdgas/Grundversorgung"
+  "url": "https://www.stadtwerke-waiblingen.de/Geschäftskunden/Erdgas"
 }
 
 structure_Geschaeftskunden_Wasser ="""
@@ -346,7 +346,7 @@ Geschaeftskunden_Service = {
   "url": "https://www.stadtwerke-waiblingen.de/Privatkunden/Service"
 }
 
-object = Privatkunden_PrivateKunden_Strom_2
+object = Geschaeftskunden_Erdgas_Grundversorgung
 structure = {
     object.get("title"): {
         "url": object.get("url"),
