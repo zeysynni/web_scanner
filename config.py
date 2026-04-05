@@ -346,7 +346,7 @@ Geschaeftskunden_Service = {
   "url": "https://www.stadtwerke-waiblingen.de/Privatkunden/Service"
 }
 
-object = Geschaeftskunden_Erdgas_Grundversorgung
+object = kontakt
 structure = {
     object.get("title"): {
         "url": object.get("url"),

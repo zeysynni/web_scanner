@@ -1,24 +1,13 @@
 from pathlib import Path
 from datetime import datetime
 import json
+import os
 from rich.console import Console
 from rich.markdown import Markdown
 import pypandoc
-import os
 
 def save_markdown(markdown_text: str,output_dir: str = "outputs",filename: str | None = None,encoding: str = "utf-8") -> Path:
-    """
-    Speichert Markdown-Text lokal in einer .md-Datei.
-
-    Args:
-        markdown_text: Der Markdown-Inhalt (String)
-        output_dir: Zielordner (wird erstellt, falls nicht vorhanden)
-        filename: Dateiname ohne Endung; falls None → Zeitstempel
-        encoding: Text-Encoding (Standard: utf-8)
-
-    Returns:
-        Path zur gespeicherten Datei
-    """
+    """Save Markdown-Text locally as .md-Datei."""
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
@@ -34,7 +23,7 @@ def save_markdown(markdown_text: str,output_dir: str = "outputs",filename: str |
     return file_path
 
 def save_json(result, output_dir="outputs", filename=None):
-    # save markdown as json
+    """Save markdown as json."""
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
@@ -53,6 +42,7 @@ def print_markdown(result):
     console.print(Markdown(result.final_output))
 
 def json_to_markdown(data: dict) -> str:
+    """Convert json output as markdown. This should be adapted if the webpage structure is changed."""
     lines = []
 
     for page in data.get("pages", []):
@@ -107,13 +97,7 @@ def save_markdown_from_json(json_path: str, md_path: str) -> None:
         f.write(markdown)
 
 def md_to_pdf(input_md_path: str, output_pdf_path: str):
-    """
-    Convert a Markdown (.md) file to a PDF file.
-
-    Args:
-        input_md_path (str): Path to the input .md file
-        output_pdf_path (str): Path to save the output .pdf file
-    """
+    """Convert a Markdown (.md) file to a PDF file."""
     if not os.path.exists(input_md_path):
         raise FileNotFoundError(f"Input file not found: {input_md_path}")
 
@@ -127,18 +111,3 @@ def md_to_pdf(input_md_path: str, output_pdf_path: str):
         print(f"PDF successfully created at: {output_pdf_path}")
     except Exception as e:
         raise RuntimeError(f"Conversion failed: {e}")
-
-if __name__ == "__main__":
-    # save json to md
-    input_path = Path("rest/Unternehmen_0.json")
-    output_path = input_path.with_suffix(".md")
-
-    with open(input_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    markdown = json_to_markdown(data)
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(markdown)
-
-    print(f"Saved to {output_path}")

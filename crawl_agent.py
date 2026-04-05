@@ -1,5 +1,6 @@
-import openai
 from contextlib import AsyncExitStack
+import openai
+
 from agents.mcp import MCPServerStdio
 from agents import Agent, Tool, Runner, trace, RunConfig, ModelSettings
 from agents.models.openai_provider import OpenAIProvider
@@ -7,14 +8,14 @@ from agents.models.openai_provider import OpenAIProvider
 
 from mcp_params import web_crawling_mcp_params
 from prompts import scanner_instruction
-#from webpage_structure import Webpages
 from webpage_structure import Webpages
-from utils import *
+from utils import save_json
 
 # defines the mcp_server and agent for web crawling
 # defines also the launch function for crawler
 
 async def create_mcp_servers(stack: AsyncExitStack):
+    # could be easily extended if more mcp servers are needed
     web_servers = [
         await stack.enter_async_context(
             MCPServerStdio(
@@ -26,8 +27,8 @@ async def create_mcp_servers(stack: AsyncExitStack):
     ]
     return web_servers
 
-async def create_craw_agent(stack: AsyncExitStack) -> Agent:
-    craw_server= await create_mcp_servers(stack)
+async def create_crawl_agent(stack: AsyncExitStack) -> Agent:
+    craw_server = await create_mcp_servers(stack)
     agent = Agent(
         name="crawler", 
         instructions=scanner_instruction, 
@@ -43,9 +44,7 @@ async def launch_crawler(agent, topic, message):
     )
     run_config = RunConfig(
         model_provider=OpenAIProvider(openai_client=openai_client),
-        model_settings=ModelSettings(
-            temperature=0,
-            )
+        model_settings=ModelSettings(temperature=0),
     )
     with trace(f"{topic}"):
         result = await Runner.run(agent, message, max_turns=200, run_config=run_config)

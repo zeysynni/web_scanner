@@ -1,8 +1,59 @@
 {
-  "base_url": "https://www.stadtwerke-waiblingen.de/Geschäftskunden/Erdgas/Grundversorgung",
+  "base_url": "https://www.stadtwerke-waiblingen.de/Geschäftskunden/Erdgas",
   "pages": [
     {
-      "url": "https://www.stadtwerke-waiblingen.de/Geschäftskunden/Erdgas/Grundversorgung",
+      "url": "https://www.stadtwerke-waiblingen.de/Gesch%C3%A4ftskunden/Erdgas",
+      "blocks": [
+        {
+          "heading": "Gastarif",
+          "segments": [
+            {
+              "subheading": "Unser neues Angebot: toptarif-GAS plus",
+              "text": "Erdgas so wie es Waiblingen braucht – das ist unser toptarif-GAS plus. Günstig und mit Energiepreisgarantie. Damit sind Sie nicht nur auf den nächsten Winter gut vorbereitet. Sie können sich auch beim Kochen mit Gas jedes Mal freuen, dass Sie von unserem Preisvorteil durch Verbrauchsstaffeln profitieren. Jetzt gleich im Preisrechner Ihren individuellen Tarif berechnen.",
+              "files": null,
+              "contacts": null
+            },
+            {
+              "subheading": null,
+              "text": "- Günstiger Gastarif mit Energiepreisgarantie: Transparent, sicher und fair kalkuliert!\n- Einfacher Tarifwechsel und Verwaltung im Online-Portal: Jetzt wechseln im Kundenportal\n- Preisstaffelung nach Verbrauch: Flexibles Heizkostenmodell",
+              "files": null,
+              "contacts": null
+            },
+            {
+              "subheading": "Anmeldung für Neukunden",
+              "text": "Es gibt ein Formular zur Anmeldung für Neukunden (Gas).",
+              "files": null,
+              "contacts": null
+            },
+            {
+              "subheading": "Biogas",
+              "text": "Auf Wunsch können wir Ihrem Gas 10 % oder mehr Bioerdgas beimischen. Melden Sie sich bei uns: kunden-center(at)stadtwerke-waiblingen.de.",
+              "files": null,
+              "contacts": null
+            },
+            {
+              "subheading": "Hinweis zur Umsatzsteuer",
+              "text": "Für den Zeitraum vom 01.10.2022 bis 31.03.2024 gilt für Gaslieferungen über das Erdgasnetz die gesetzliche Absenkung der Umsatzsteuer von 19 % auf 7 %. Ab dem 01.04.2024 werden unsere Nettopreise wieder mit 19 % Umsatzsteuer berechnet. Bei der Abrechnung des Gasverbrauches werden jeweils die Nettopreise zugrunde gelegt und dem daraus resultierenden Rechnungsbetrag die jeweils gültige Umsatzsteuer hinzugerechnet.",
+              "files": null,
+              "contacts": null
+            }
+          ]
+        },
+        {
+          "heading": "Zuverlässig. Fair. Nah – Ihre Grundversorgung mit Erdgas",
+          "segments": [
+            {
+              "subheading": null,
+              "text": "Als Ihr regionaler Energieversorger stellen wir sicher, dass Sie jederzeit zuverlässig mit Erdgas versorgt sind – auch ohne gesonderten Liefervertrag. Mit unserer Grundversorgung profitieren Sie von fairen Konditionen, transparenter Preisgestaltung und einem unkomplizierten Wechselservice.",
+              "files": null,
+              "contacts": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.stadtwerke-waiblingen.de/Gesch%C3%A4ftskunden/Erdgas/Grundversorgung",
       "blocks": [
         {
           "heading": "Grundversorgung",
@@ -44,7 +95,7 @@
               "subheading": "Kunden-Center",
               "text": null,
               "files": null,
-              "contacts": "+49 7151 131-170\nLink: Kunden-Center (https://www.stadtwerke-waiblingen.de/Gesch%C3%A4ftskunden/Erdgas/Grundversorgung/Kunden-Center-team774)\nLink: Schreiben Sie uns eine Nachricht (https://www.stadtwerke-waiblingen.de/kontakt)"
+              "contacts": "+49 7151 131-170\nSchreiben Sie uns eine Nachricht: /kontakt"
             }
           ]
         },
@@ -53,20 +104,9 @@
           "segments": [
             {
               "subheading": null,
-              "text": "Schorndorfer Straße 67\n71332 Waiblingen\n\nTelefon: 07151 131-0",
+              "text": "Schorndorfer Straße 67\n71332 Waiblingen\n\nUnsere Öffnungszeiten:\nMontag: 08:00 - 12:00 & 14:00 - 17:00 Uhr\nDienstag: 08:00 - 12:00 & 14:00 - 17:00 Uhr\nMittwoch: 08:00 - 12:00 Uhr\nDonnerstag: 08:00 - 12:00 & 14:00 - 17:00 Uhr\nFreitag: 08:00 - 12:00 Uhr",
               "files": null,
-              "contacts": null
-            }
-          ]
-        },
-        {
-          "heading": "Unsere Öffnungszeiten",
-          "segments": [
-            {
-              "subheading": null,
-              "text": "Montag: 08:00 - 12:00 & 14:00 - 17:00 Uhr\nDienstag: 08:00 - 12:00 & 14:00 - 17:00 Uhr\nMittwoch: 08:00 - 12:00 Uhr\nDonnerstag: 08:00 - 12:00 & 14:00 - 17:00 Uhr\nFreitag: 08:00 - 12:00 Uhr",
-              "files": null,
-              "contacts": null
+              "contacts": "07151 131-0"
             }
           ]
         }

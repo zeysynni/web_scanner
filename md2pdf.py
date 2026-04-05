@@ -1,4 +1,4 @@
-from utils import md_to_pdf
+#from utils import md_to_pdf
 from pathlib import Path
 from typing import List
 import pypandoc
@@ -99,6 +99,6 @@ def convert_single_md(input_folder: str, filename: str, output_folder: str):
 if __name__ == "__main__":
     convert_single_md(
         input_folder="outputs",
-        filename=f"{object.get("title")}.md",   # or just "report"
+        filename=f"{object.get("title")}.md",   
         output_folder="customer_files"
     )

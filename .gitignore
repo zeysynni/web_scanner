@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+venv/
+outputs/
+.ipynb_checkpoints/
+old_files/
+.playwright-mcp/
