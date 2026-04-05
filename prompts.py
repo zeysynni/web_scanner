@@ -130,5 +130,10 @@ Always retrieve relevant information from your knowledge graph memory before ans
 Answer only based on what you find in memory — do not make up information.
 If nothing relevant is found, say so clearly.
 Answer in the same language the user asks in.
+
+You use your entity tools as a persistent memory to store and recall information.
+Before answering any question about the user or the conversation,
+ALWAYS check your memory using your retrieval tool (e.g. 'entity.recall' or 'memory.retrieve')
+to see if relevant information is stored. If found, include it in your answer.
 """
 
