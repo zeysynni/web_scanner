@@ -12,7 +12,7 @@ Instead of traditional scraping, the system uses an agent-based approach with st
 
 * 🔍 Agent-based web crawling using LLMs
 * 🧠 Structured extraction with Pydantic schemas
-* 📄 Automatic conversion: JSON → Markdown → PDF
+* 📄 Automatic conversion: JSON → Markdown & Manuell conversion: Markdown → PDF
 * ⚙️ Modular and extensible architecture
 * 🔁 Async pipeline for scalable crawling
 
@@ -36,7 +36,7 @@ The system is organized into modular components:
 ├── faq/db_agent.py         # DB Agent
 ├── faq/ingest_kg.py        # ingest .md files from crawl results to knowledge-graph-based DB. Run this to do new ingestion
 ├── faq/ingest_sql.py       # ingest .md files from crawl results to sql DB. Run this to do new ingestion
-├── faq/faq_bot.py          # Launch for running the FAQ Bot
+├── faq/faq_bot.py          # Launch the FAQ Bot
 ```
 
 ### Pipeline
@@ -57,11 +57,11 @@ The crawler outputs structured data using Pydantic models:
 * `Page`
 * `Block`
 * `ContentSegment`
-* `Case-dependent structures like FAQ / QA`
+* `Case-dependent structures like FAQ / Files etc`
 
 This ensures:
 
-* consistent structure
+* consistent and generalized structure
 * easy post-processing
 * compatibility with downstream pipelines
 
@@ -70,8 +70,8 @@ This ensures:
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/llm-web-crawler.git
-cd llm-web-crawler
+git clone https://github.com/zeysynni/web_scanner.git
+cd web_scanner
 pip install -r requirements.txt
 ```
 
@@ -89,7 +89,9 @@ OPENAI_API_KEY=your_api_key_here
 
 ## Usage
 
-Run the crawler:
+Choose the crawl topic in **config.py** by changing the variable **object**.
+
+Then run the crawler:
 
 ```bash
 python main.py
@@ -101,6 +103,8 @@ Outputs will be saved in (for .pdf files you will have to run md2pdf.py explicit
 outputs/
 ├── topic.json
 ├── topic.md
+
+customer_files/
 ├── topic.pdf
 ```
 You will find the predefined relevant cralwing goals from a webpage/webpages in the file config.py. There you can switch from different webpages that need to be crawled.
@@ -118,7 +122,7 @@ You might wants to adjust webpage structure under the file webpage_structure.py,
   "pages": [
     {
       "url": "...",
-      "blocks": [...]
+      "blocks": [subheading, files, contact...]
     }
   ]
 }
@@ -154,6 +158,7 @@ This project follows:
 
 * Depends on LLM accuracy
 * Requires careful prompt design for best results
+* Output length might affect result quality. DO NOT crawl too many webpages at once
 
 ---
 
@@ -162,6 +167,7 @@ This project follows:
 * Introduce rate limiting
 * Add CLI interface
 * Add unit tests
+* Maybe add logic to save crawl results for each webpage
 
 ---
 
