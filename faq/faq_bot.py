@@ -1,6 +1,6 @@
 from contextlib import AsyncExitStack
 from dotenv import load_dotenv
-from knowledge_graph_db_agent import launch_DB, create_faq_agent
+from faq.knowledge_graph_db_agent import launch_DB, create_faq_agent
 from mcp_params import sqlite_db_params, knowledge_graph_db_params
 from prompts import qa_instruction_sql, qa_instruction_kg
 from agents import trace
