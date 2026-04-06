@@ -7,11 +7,9 @@ from prompts import get_user_prompt_structured_output
 from config import structure
 from utils import save_markdown_from_json
 
-# readme
+
 # check webpage structure first, if you want to change structure, dont forget to change the func json->md in utils.py
-# define config
 load_dotenv(override=True)
-# note separate strucutre more, also items to crawl. uplodad to github
 
 async def process_topic(agent, topic: str, topic_config: dict) -> None:
     url = topic_config.get("url")
