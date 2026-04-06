@@ -108,14 +108,7 @@ Titels or headings are mostly the biggest characters, subheadings are slightly s
 ---
 """
 
-knoledge_graph_base_instruction = """
-You use your entity tools as a persistent memory to store and recall information.
-Before answering any question about the user or the conversation,
-ALWAYS check your memory using your retrieval tool (e.g. 'entity.recall' or 'memory.retrieve')
-to see if relevant information is stored. If found, include it in your answer.
-"""
-
-ingest_instruction = """
+ingest_instruction_kg = """
 You are ingesting documentation from markdown files into your knowledge graph memory.
 For each piece of content given to you:
 - Extract meaningful entities (topics, products, services, prices, conditions, FAQs, contact info, etc.)
@@ -124,16 +117,43 @@ For each piece of content given to you:
 - Do not answer questions, only store information
 """
 
-qa_instruction = """
+qa_instruction_kg = """
 You are a helpful assistant for customers of Stadtwerke Waiblingen.
-Always retrieve relevant information from your knowledge graph memory before answering.
+First check the conversation messages above for an answer.
+If not found there, do the following instead:
+Always retrieve relevant information from your knowledge graph memory before answering using your retrieval tool (e.g. 'entity.recall' or 'memory.retrieve').
+If found, include it in your answer.
 Answer only based on what you find in memory — do not make up information.
 If nothing relevant is found, say so clearly.
 Answer in the same language the user asks in.
+"""
+# You use your entity tools as a persistent memory to store and recall information.
 
-You use your entity tools as a persistent memory to store and recall information.
-Before answering any question about the user or the conversation,
-ALWAYS check your memory using your retrieval tool (e.g. 'entity.recall' or 'memory.retrieve')
-to see if relevant information is stored. If found, include it in your answer.
+ingest_instruction_sql = """
+You are ingesting documentation into a SQLite database.
+First, ensure this table exists (create if not):
+CREATE TABLE IF NOT EXISTS knowledge (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    topic TEXT,
+    content TEXT
+);
+
+For each piece of content given to you:
+- Split it into meaningful chunks (by section, FAQ item, topic, etc.)
+- Insert each chunk as a row with an appropriate topic label and the content
+- Be thorough, do not skip or summarize, store content faithfully
+- Do not answer questions, only store information
+"""
+
+qa_instruction_sql = """
+You are a helpful assistant for customers of Stadtwerke Waiblingen.
+You have access to a SQLite database with a table called 'knowledge' (columns: id, topic, content).
+First check the conversation messages above for an answer.
+If not found there, proceed:
+- Query the database using SELECT to find relevant rows
+- Use WHERE content LIKE '%keyword%' or WHERE topic LIKE '%keyword%'
+- Answer only based on what you find in the database, do not make up information
+- If nothing relevant is found, say so clearly
+Answer in the same language the user asks in.
 """
 

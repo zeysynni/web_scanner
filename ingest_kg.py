@@ -2,8 +2,11 @@ import asyncio
 import os
 from contextlib import AsyncExitStack
 from dotenv import load_dotenv
-from knowledge_graph_db_agent import create_kg_db_agent, launch_DB
+from knowledge_graph_db_agent import create_db_agent, launch_DB
 from tqdm import tqdm
+
+from mcp_params import kb_db_params, sqlite_db_params
+from prompts import ingest_instruction_sql, ingest_instruction_kg
 
 load_dotenv(override=True)
 
@@ -18,7 +21,7 @@ def load_md_files(folder: str = "outputs") -> list[dict]:
 
 async def main():
     async with AsyncExitStack() as stack:
-        agent = await create_kg_db_agent(stack)
+        agent = await create_db_agent(stack, ingest_instruction_sql, sqlite_db_params)
         md_files = load_md_files("outputs")
         for file in tqdm(md_files, desc="Ingesting", unit="file"):
             message = f"Filename: {file['filename']}\n\n{file['content']}"
