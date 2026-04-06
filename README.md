@@ -33,6 +33,10 @@ The system is organized into modular components:
 ├── mcp_params.py           # MCP server configuration
 ├── outputs/                # Generated results
 ├── faq/                    # FAQ Bot relevant files, provide two variants of databases (knowledge-graph-based and sql)
+├── faq/db_agent.py         # DB Agent
+├── faq/ingest_kg.py        # ingest .md files from crawl results to knowledge-graph-based DB. Run this to do new ingestion
+├── faq/ingest_sql.py       # ingest .md files from crawl results to sql DB. Run this to do new ingestion
+├── faq/faq_bot.py          # Launch for running the FAQ Bot
 ```
 
 ### Pipeline
@@ -157,8 +161,16 @@ This project follows:
 
 * Introduce rate limiting
 * Add CLI interface
-* Store results in a database (e.g. SQL-based for fast FAQ Bot retrievement)
 * Add unit tests
+
+---
+
+## Extras
+
+* In the folder **faq**, an FAQ-Bot with two variants of DB, based on the crawl results, is implemented. 
+* Information are extracted from .md files of the crawl results.
+* A Gradio UI is provided.
+* Chat history is implemented as list of messages.
 
 ---
 
