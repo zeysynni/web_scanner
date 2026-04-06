@@ -2,7 +2,7 @@ import asyncio
 import os
 from contextlib import AsyncExitStack
 from dotenv import load_dotenv
-from faq.knowledge_graph_db_agent import create_db_agent, launch_DB
+from faq.db_agent import create_db_agent, launch_DB
 from tqdm import tqdm
 
 from mcp_params import kb_db_params
