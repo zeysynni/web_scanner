@@ -32,6 +32,7 @@ The system is organized into modular components:
 ├── config.py               # Crawl configuration
 ├── mcp_params.py           # MCP server configuration
 ├── outputs/                # Generated results
+├── faq/                    # FAQ Bot relevant files, provide two variants of databases (knowledge-graph-based and sql)
 ```
 
 ### Pipeline
