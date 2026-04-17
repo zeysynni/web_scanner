@@ -1,20 +1,21 @@
 from contextlib import AsyncExitStack
 from dotenv import load_dotenv
-from faq.db_agent import launch_DB, create_faq_agent
-from mcp_params import sqlite_db_params, knowledge_graph_db_params
+from db_agent import launch_DB, create_faq_agent
+from mcp_params import sqlite_db_params, kb_db_params
 from prompts import qa_instruction_sql, qa_instruction_kg
 from agents import trace
 import gradio as gr
 
 load_dotenv(override=True)
 
-# switch db between knowledge-graph and sql
-db_params = sqlite_db_params
-qa_instruction = qa_instruction_sql
+# switch db between kb for knowledge-graph and sql
+db_name = "kb"#"sql"
 
 async def ask(question: str, history: list) -> str:
     async with AsyncExitStack() as stack:
-        agent = await create_faq_agent(stack, qa_instruction, db_params)
+        agent = await create_faq_agent(stack, 
+        qa_instruction =qa_instruction_sql if db_name=="sql" else qa_instruction_kg, 
+        db_params = sqlite_db_params if db_name=="sql" else kb_db_params)
         messages = []
         for turn in history:
             messages.append({"role": "user", "content": turn["content"] if isinstance(turn, dict) else turn[0]})
@@ -36,4 +37,4 @@ demo = gr.ChatInterface(
 )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)

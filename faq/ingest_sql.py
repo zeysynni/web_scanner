@@ -14,7 +14,7 @@ def init_db(db_path: str = f"./memory/{sql_db_name}.db"):
     con.commit()
     con.close()
 
-def ingest_md_files(folder: str = "outputs", db_path: str = f"./memory/{sql_db_name}.db"):
+def ingest_md_files(folder: str = "../outputs", db_path: str = f"./memory/{sql_db_name}.db"):
     con = sqlite3.connect(db_path)
     files = [f for f in os.listdir(folder) if f.endswith(".md")]
     for fname in files:
